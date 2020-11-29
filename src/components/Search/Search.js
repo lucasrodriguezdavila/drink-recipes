@@ -13,15 +13,21 @@ const SearchInput = ({text, setText}) => {
         focusBorderColor="yellow.500"/>
     )
 }
-
+    
 export const Search = ({handleSearch}) => {
     const [text, setText] = useState("")
-
+    const search =() =>{
+        handleSearch(text)
+    }
     return(
-        <Flex>
+        <Flex as="form" onSubmit={(e)=>{
+            e.preventDefault();
+            search();
+        }}>
             <SearchInput text={text} setText={setText}></SearchInput>
-            <Button 
-            onClick={handleSearch(text)}
+            <Button
+            boxShadow="md"
+            onClick={search}
             marginLeft="10px" 
             colorScheme="yellow">Buscar</Button>
         </Flex>
