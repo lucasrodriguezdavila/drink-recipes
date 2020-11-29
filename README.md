@@ -1,9 +1,9 @@
 ### Pre-requisites 📋
 
-_This app uses create-react-app, chakra-ui & react-icons_
+_This app uses NodeJs, create-react-app, chakra-ui & react-icons_
 
 
-## Set up 🚀
+## Set up 🔧
 _Run commands_
 ```
 git clone https://github.com/lucasrodriguezdavila/drink-recipes.git
